@@ -1,6 +1,7 @@
 <?php
 
 use eftec\bladeone\BladeOne;
+use Illuminate\Support\Facades\Request;
 
 define('PLORO_START', microtime(true));
 
@@ -11,7 +12,7 @@ $config = include __DIR__.'/../config/config.php';
 
 echo round(microtime(true) - PLORO_START, 4);
 
-function view(): BladeOne
-{
-    return json_encode($providers['blade']);
-}
+//function view(): BladeOne
+//{
+//    return json_encode($providers['blade']);
+//}
