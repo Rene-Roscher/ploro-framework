@@ -1,0 +1,10 @@
+{
+    "require": {
+        "vlucas/phpdotenv": "^3.6",
+        "filp/whoops": "^2.5",
+        "illuminate/database": "^6.3",
+        "larapack/dd": "^1.1",
+        "symfony/asset": "^4.3",
+        "eftec/bladeone": "^3.31"
+    }
+}
