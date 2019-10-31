@@ -8,7 +8,7 @@ use Illuminate\Database\Capsule\Manager as Connection;
 class DatabaseProvider
 {
 
-    protected $connection;
+    public $instance;
 
     public function __construct()
     {

@@ -1,7 +1,11 @@
 @extends('layouts.homepage')
 
-
-LOll
 @section('content')
+    <div class="title m-b-md">
+        {{ env('APP_NAME') }}
+    </div>
 
+    <div class="links">
+        {{ 'Framework was loaded in '.RENDERTIME.' seconds YEAH :>' }}
+    </div>
 @endsection

@@ -9,11 +9,11 @@ use eftec\bladeone\BladeOne;
 class BladeProvider
 {
 
-    protected $blade;
+    public $instance;
 
     public function __construct()
     {
-        $this->blade = new BladeOne(__DIR__.'/../../views', __DIR__.'/../../cache',getenv('APP_DEBUG') ? BladeOne::MODE_SLOW : BladeOne::MODE_AUTO);
+        $this->instance = new BladeOne(__DIR__.'/../../views', __DIR__.'/../../cache',getenv('APP_DEBUG') ? BladeOne::MODE_SLOW : BladeOne::MODE_AUTO);
     }
 
 }

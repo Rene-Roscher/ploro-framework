@@ -1,0 +1,14 @@
+<?php $_shouldextend[1]=1; ?>
+
+<?php $this->startSection('content'); ?>
+ <div class="title m-b-md">
+ <?php echo static::e(env('APP_NAME')); ?>
+
+ </div>
+
+ <div class="links">
+ <?php echo static::e('Framework was loaded in '.RENDERTIME.' seconds YEAH :>'); ?>
+
+ </div>
+<?php $this->stopSection(); ?>
+<?php if (@$_shouldextend[1]) { echo $this->runChild('layouts.homepage'); } ?>

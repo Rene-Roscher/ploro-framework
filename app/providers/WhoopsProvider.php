@@ -8,13 +8,13 @@ use Whoops\Run;
 class WhoopsProvider
 {
 
-    protected $whoops;
+    public $instance;
 
     function __construct()
     {
-        $this->whoops = new Run();
-        $this->whoops->prependHandler(new PrettyPageHandler());
-        $this->whoops->register();
+        $this->instance = new Run();
+        $this->instance->prependHandler(new PrettyPageHandler());
+        $this->instance->register();
     }
 
 }
