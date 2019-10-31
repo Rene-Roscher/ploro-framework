@@ -8,4 +8,9 @@
     <div class="links">
         {{ 'Framework was loaded in '.RENDERTIME.' seconds YEAH :>' }}
     </div>
+
+    {{ env('APP_NAME') }}
+
+    @foo
+
 @endsection

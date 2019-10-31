@@ -12,7 +12,10 @@ class DatabaseProvider
 
     public function __construct()
     {
-//        Connection::connection(CONFIG['DATABASES'][0]);
+        $this->instance = new Connection();
+        $this->instance->addConnection(CONFIG['DATABASES'][0]);
+        $this->instance->setAsGlobal();
+        $this->instance->bootEloquent();
     }
 
 }

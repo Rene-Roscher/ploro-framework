@@ -10,5 +10,11 @@
  <?php echo static::e('Framework was loaded in '.RENDERTIME.' seconds YEAH :>'); ?>
 
  </div>
+
+ <?php echo static::e(env('APP_NAME')); ?>
+
+
+ 
+
 <?php $this->stopSection(); ?>
 <?php if (@$_shouldextend[1]) { echo $this->runChild('layouts.homepage'); } ?>

@@ -9,7 +9,7 @@ return [
 
     'whoops' => new WhoopsProvider(),
     'env' => new EnvProvider(),
-    'database' => new DatabaseProvider(),
+//    'database' => new DatabaseProvider(),
     'blade' => new BladeProvider(),
 
 ];
