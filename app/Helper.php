@@ -1,12 +1,11 @@
 <?php
 
-
-class Helper
+function config($file = 'config')
 {
+    return CONFIG_PATH . '/' . $file . '.php';
+}
 
-    public function view()
-    {
-
-    }
-
+function view($view, $params = [])
+{
+    return $GLOBALS['providers']['blade']->instance->run($view, $params);
 }
