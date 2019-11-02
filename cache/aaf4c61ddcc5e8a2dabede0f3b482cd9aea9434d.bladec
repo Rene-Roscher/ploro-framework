@@ -14,7 +14,7 @@
  <?php echo static::e(env('APP_NAME')); ?>
 
 
- @foo
+ 
 
 <?php $this->stopSection(); ?>
 <?php if (@$_shouldextend[1]) { echo $this->runChild('layouts.homepage'); } ?>

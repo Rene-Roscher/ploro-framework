@@ -12,5 +12,4 @@
     {{ env('APP_NAME') }}
 
     @foo
-
 @endsection

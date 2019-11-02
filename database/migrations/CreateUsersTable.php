@@ -2,12 +2,13 @@
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
 
-class CreateUsersTable extends Migration
+class CreateUsersTable
 {
 
-    public function up()
+    public $tableName = 'users';
+
+    public static function up()
     {
         Schema::create('users', function (Blueprint $table) {
             $table->bigIncrements('id');
@@ -20,8 +21,4 @@ class CreateUsersTable extends Migration
         });
     }
 
-    public function down()
-    {
-        Schema::dropIfExists('users');
-    }
 }
